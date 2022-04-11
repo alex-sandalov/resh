@@ -1,0 +1,15 @@
+// ==UserScript==
+// @name SolutionEduResh
+// @version 0.2
+// @description try to take over the world!
+// @run-at document-body
+// @include *://resh.edu.ru/subject/lesson/*
+// @author HLGHL
+// ==/UserScript==
+
+(function() {
+ 'use strict';
+ var parentElementarr = document.getElementsByClassName('lk-form-submit js-clear');
+ parentElementarr[0].textContent = 'Решить Задание';
+ parentElementarr[0].classList.add('js-show-answer'); parentElementarr[0].classList.remove('js-clear');
+})();
